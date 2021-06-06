@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://sourab:sourab@cluster0.bhqq0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-  "jwtToken": "secretToken"
+  "jwtToken": "secretToken",
+  "githubClientId": "1776e62f44c3d66320ae",
+  "githubSecret": "31f206847a2513c58d30a56d7f7255cfdd6920f2"
 }
