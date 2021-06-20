@@ -1,0 +1,55 @@
+.form {
+  &-group {
+    margin: 1.2rem 0;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  textarea,
+  select {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  input[type="submit"] {
+    font: inherit;
+  }
+}
+.small {
+  margin-top: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5rem;
+}
+
+.social-input {
+  display: flex;
+
+  i {
+    padding: 0.5rem;
+    width: 4rem;
+
+    &.fa-twitter {
+      color: #38a1f3;
+    }
+    &.fa-facebook {
+      color: #3b5998;
+    }
+    &.fa-instagram {
+      color: #e1306c;
+    }
+    &.fa-youtube {
+      color: #c4302b;
+    }
+    &.fa-linkedin {
+      color: #0077b5;
+    }
+  }
+}

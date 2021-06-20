@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ebe9280ee1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>DevConnector | Posts</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-dark">
+        <h1>
+          <a href="dashboard.html">
+            <i class="fas fa-laptop-code"></i> DevConnector
+          </a>
+        </h1>
+        <ul>
+          <li><a href="profiles.html">Developers</a></li>
+          <li><a href="post.html">Posts</a></li>
+          <li>
+            <a href="dashboard.html">
+              <i class="fas fa-user"></i
+              ><span class="hide-sm"> Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="login.html">
+              <i class="fas fa-sign-out-alt"></i
+              ><span class="hide-sm"> Logout</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="container-dev">
+      <h1 class="text-primary l">Posts</h1>
+      <p class="para">
+        <i class="fas fa-user-friends"></i> Welcome to the community
+      </p>
+      <div class="post-form">
+        <div class="post-form-header bg-primary">
+          <h3>Say something...</h3>
+        </div>
+        <form class="form my-1">
+          <textarea
+            cols="30"
+            rows="5"
+            placeholder="Create a post..."
+          ></textarea>
+          <input type="submit" value="Submit" class="btn btn-dark my-1" />
+        </form>
+        <div class="posts">
+          <div class="post bg-white my-1">
+            <div>
+              <a href="profile.html"
+                ><img
+                  class="rounded my-1"
+                  src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+                />
+                <h4>John Doe</h4>
+              </a>
+            </div>
+            <div>
+              <p class="my-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur minima quibusdam nulla, iste ipsum quaerat assumenda
+                et perspiciatis qui voluptas beatae dolor quidem neque! Iure.
+              </p>
+
+              <button class="btn">
+                <i class="fas fa-thumbs-up"></i><span> 4</span>
+              </button>
+              <button class="btn"><i class="fas fa-thumbs-down"></i></button>
+              <a href="post.html" class="btn btn-primary"> Discussion </a>
+            </div>
+          </div>
+          <div class="post bg-white my-1">
+            <div>
+              <a href="profile.html"
+                ><img
+                  class="rounded my-1"
+                  src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+                />
+                <h4>John Doe</h4>
+              </a>
+            </div>
+            <div>
+              <p class="my-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur minima quibusdam nulla, iste ipsum quaerat assumenda
+                et perspiciatis qui voluptas beatae dolor quidem neque! Iure.
+              </p>
+              <button class="btn">
+                <i class="fas fa-thumbs-up"></i><span> 4</span>
+              </button>
+              <button class="btn"><i class="fas fa-thumbs-down"></i></button>
+              <a href="post.html" class="btn btn-primary"> Discussion </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -23,7 +23,7 @@ router.post(
       const newPost = new Post({
         text: req.body.text,
         name: user.name,
-        avatar: user.name,
+        avatar: user.avatar,
         user: req.user.id,
       });
 
@@ -110,7 +110,7 @@ router.put("/like/:id", auth, async (req, res) => {
 });
 
 //Adding Unlike
-router.put("/like/:id", auth, async (req, res) => {
+router.put("/unlike/:id", auth, async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
 

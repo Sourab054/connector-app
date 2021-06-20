@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ebe9280ee1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>DevConnector | Developers</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-dark">
+        <h1>
+          <a href="dashboard.html">
+            <i class="fas fa-laptop-code"></i> DevConnector
+          </a>
+        </h1>
+        <ul>
+          <li><a href="profiles.html">Developers</a></li>
+          <li><a href="posts.html">Posts</a></li>
+          <li>
+            <a href="dashboard.html">
+              <i class="fas fa-user"></i
+              ><span class="hide-sm"> Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="login.html">
+              <i class="fas fa-sign-out-alt"></i
+              ><span class="hide-sm"> Logout</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="dashboard container-dev">
+      <h1 class="text-primary l">Dashboard</h1>
+      <h3 class="my-1"><i class="fas fa-user"></i> Welcome, John Doe</h3>
+      <div class="dash-buttons">
+        <a href="create-profile.html" class="btn"
+          ><i class="fas fa-user-circle text-primary"></i> Edit Profile</a
+        >
+        <a href="add-exp.html" class="btn"
+          ><i class="fab fa-black-tie text-primary"></i> Add Experience</a
+        >
+        <a href="add-edu.html" class="btn"
+          ><i class="fas fa-graduation-cap text-primary"></i> Add Education</a
+        >
+      </div>
+      <h2 class="my-2">Experience credentials</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th class="hide-sm">Role</th>
+            <th class="hide-sm">Year</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google</td>
+
+            <td class="hide-sm">Junior Developer</td>
+
+            <td class="hide-sm">Jan 2021 - Current</td>
+            <td><button class="btn btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Amazon</td>
+
+            <td class="hide-sm">Web Developer</td>
+
+            <td class="hide-sm">Jan 2016 - Oct 2021</td>
+            <td><button class="btn btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="my-2">Education Details</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>College</th>
+            <th class="hide-sm">Degree</th>
+            <th class="hide-sm">Year</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dayananda Sagar University</td>
+
+            <td class="hide-sm">Bachelor of Engineering</td>
+
+            <td class="hide-sm">Jan 2011 - Jan 2015</td>
+            <td><button class="btn btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="my-2 px-1">
+        <button class="btn btn-danger">
+          <i class="fas fa-user-times"></i> Delete My Account
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
