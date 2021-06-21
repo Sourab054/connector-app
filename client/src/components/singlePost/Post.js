@@ -2,6 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import Comment from "../singlePost/Comment";
+import CommentItem from "./CommentItem";
 import PostItem from "../post/PostItem";
 import { getPost } from "../../actions/post";
 
@@ -15,7 +16,12 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
   ) : (
     <Fragment>
       <PostItem post={post} showActions={false} />
-      <Comment postID={post._id} />
+      <Comment postId={post._id} />
+      <div className="comments">
+        {post.comments.map((comment) => (
+          <CommentItem key={comment._id} comment={comment} postId={post._id} />
+        ))}
+      </div>
     </Fragment>
   );
 };

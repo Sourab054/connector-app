@@ -54,7 +54,7 @@ export default function (state = initialState, action) {
       return {
         ...state,
         post: {
-          ...state,
+          ...state.post,
           comments: state.post.comments.filter(
             (comment) => comment._id !== payload
           ),
